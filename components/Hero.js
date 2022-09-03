@@ -5,9 +5,14 @@ app.component("hero-section", {
     },
     template:
       /*html*/
-      `<div>
-      <img class="botella-vidrio mx-auto d-block" src="./imgs/botella-vidrio-sombra.png" alt="Botella Vidrio Agua BLU"/>
-      <h1 class="hero-text">ALKALINE WATER</h1>
+      `<div class="hero-items">
+      
+      <!--
+        <img class="mx-auto d-block mt-3 img-fluid botella-vidrio" src="./imgs/hero-bottle.png" alt="Botella Vidrio Agua BLU"/>
+        <img class="mx-auto d-block mt-3 img-fluid" src="./imgs/hero-text.png" alt="Alkaline Water"/>
+      -->
+      <img class="mx-auto d-block mt-3 img-fluid" src="./imgs/hero-items.png" alt="Alkaline Water"/>
+
       </div>
       `,
   });

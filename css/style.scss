@@ -5,13 +5,25 @@
     font-display: swap;
 }
 
+header{
+    margin-bottom: 5em;
+}
+
 .hero-background{
-    position: absolute;
-    width: 100%;
-    height: 930px;
+    position: relative;
+    width: auto;
+    height: 100%;
+    padding-bottom: 5%;
     left: 0px;
     top: 0px;
     background: vars.$color-lightblue;
+}
+
+.mid-background{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10%;
 }
 
 .logo-blu{
@@ -35,10 +47,10 @@
 
 .botella-vidrio{
     position: absolute;
-    width: 495px;
-    height: 661px;
+    //width: 495px;
+    //height: 661px;
     z-index: 1;
-    right: 315px;
+    //right: 315px;
 }
 
 .hero-text{
@@ -53,4 +65,11 @@
     text-align: center;
 
     line-height: 0.9;
+}
+
+//img instead of text because safari doesn't support local fonts
+.hero-items{
+    position: relative;
+    padding-left: 15%;
+    padding-right: 15%;
 }
