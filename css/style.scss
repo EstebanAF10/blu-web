@@ -1,10 +1,56 @@
-//@use 'vars';
+@use 'vars';
+@font-face {
+    font-family: "Cubano";
+    src: url(./fonts/Cubano-Regular.otf);
+    font-display: swap;
+}
 
-hero-background{
+.hero-background{
     position: absolute;
-    width: 1442px;
+    width: 100%;
     height: 930px;
     left: 0px;
     top: 0px;
-    background: rgba(111, 179, 190, 0.51);
+    background: vars.$color-lightblue;
+}
+
+.logo-blu{
+    //position: absolute;
+    width: 134.01px;
+    height: auto;
+}
+
+.nav-items{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: vars.$color-white;
+    text-decoration: none;
+    margin-left: 2em;
+    margin-right: 2em;
+    
+}
+
+.botella-vidrio{
+    position: absolute;
+    width: 495px;
+    height: 661px;
+    z-index: 1;
+    right: 315px;
+}
+
+.hero-text{
+    font-family: 'Cubano';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 222.297px;
+    line-height: 267px;
+    color: vars.$color-darker-light-blue;
+
+    position: absolute;
+    text-align: center;
+
+    line-height: 0.9;
 }
