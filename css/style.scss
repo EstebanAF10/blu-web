@@ -6,17 +6,65 @@
 }
 
 header{
-    margin-bottom: 5em;
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+padding: 30px 100px;
+justify-content: space-between;
+align-items: center;
 }
 
-.hero-background{
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: vars.$color-white;
+    text-decoration: none;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+header ul li a:hover{
+    //background: #fff;
+    color: vars.$color-darker-light-blue;
+}
+
+%background{
     position: relative;
     width: auto;
     height: 100%;
     padding-bottom: 5%;
     left: 0px;
     top: 0px;
+}
+
+.hero-background{
+    @extend %background;
     background: vars.$color-lightblue;
+}
+
+.products-background{
+    @extend %background;
+    background: vars.$color-lightpurple;
+}
+
+.story-background{
+    @extend %background;
+    background: vars.$color-lightyellow;
 }
 
 .mid-background{
@@ -30,20 +78,11 @@ header{
     //position: absolute;
     width: 134.01px;
     height: auto;
+    margin-right: 2em;
+    margin-left: 2em;
 }
 
-.nav-items{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    color: vars.$color-white;
-    text-decoration: none;
-    margin-left: 2em;
-    margin-right: 2em;
-    
-}
+/*
 
 .botella-vidrio{
     position: absolute;
@@ -67,9 +106,11 @@ header{
     line-height: 0.9;
 }
 
+*/
+
 //img instead of text because safari doesn't support local fonts
 .hero-items{
     position: relative;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 18%;
+    padding-right: 18%;
 }
