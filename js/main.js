@@ -5,5 +5,14 @@ const app = Vue.createApp({
         }
     },
     mounted: function(){
-    }
+
+        const blackHeader = document.getElementById("blackHeader");
+        const whiteHeader = document.getElementById("whiteHeader");
+
+    },
+    methods: {
+        
+       
+
+    },
 })

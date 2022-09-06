@@ -26,43 +26,65 @@ header ul li{
     list-style: none;
 }
 
-header ul li a{
+// header ul li a{
+//     font-family: 'Roboto';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 24px;
+//     line-height: 28px;
+//     text-decoration: none;
+//     margin-left: 2em;
+//     margin-right: 2em;
+//     color: vars.$color-white;
+// }
+
+%header-text{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
-    color: vars.$color-white;
     text-decoration: none;
     margin-left: 2em;
     margin-right: 2em;
 }
 
+.whiteheader ul li a{
+    @extend %header-text;
+    color: vars.$color-white;
+}
+
+.blackheader ul li a{
+    @extend %header-text;
+    color: black;
+}
+
 header ul li a:hover{
-    //background: #fff;
     color: vars.$color-darker-light-blue;
 }
 
 %background{
     position: relative;
-    width: auto;
-    height: 100%;
+    //width: auto;
+    //height: 100%;
+    width: 100%;
+    height: 100vh;
     padding-bottom: 5%;
     left: 0px;
     top: 0px;
 }
 
-.hero-background{
+.herobackground{
     @extend %background;
     background: vars.$color-lightblue;
 }
 
-.products-background{
+.productsbackground{
     @extend %background;
     background: vars.$color-lightpurple;
 }
 
-.story-background{
+.storybackground{
     @extend %background;
     background: vars.$color-lightyellow;
 }
@@ -76,11 +98,21 @@ header ul li a:hover{
 
 .logo-blu{
     //position: absolute;
+    
     width: 134.01px;
     height: auto;
     margin-right: 2em;
     margin-left: 2em;
 }
+
+.whitelogo{
+    display:show;
+}
+
+// .blacklogo{
+//     display:show;
+// }
+
 
 /*
 

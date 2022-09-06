@@ -24,40 +24,47 @@ header ul li {
   list-style: none;
 }
 
-header ul li a {
+.blackheader ul li a, .whiteheader ul li a {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  color: #FCFCFC;
   text-decoration: none;
   margin-left: 2em;
   margin-right: 2em;
+}
+
+.whiteheader ul li a {
+  color: #FCFCFC;
+}
+
+.blackheader ul li a {
+  color: black;
 }
 
 header ul li a:hover {
   color: #6FB3BE;
 }
 
-.story-background, .products-background, .hero-background {
+.storybackground, .productsbackground, .herobackground {
   position: relative;
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: 100vh;
   padding-bottom: 5%;
   left: 0px;
   top: 0px;
 }
 
-.hero-background {
+.herobackground {
   background: rgba(111, 179, 190, 0.51);
 }
 
-.products-background {
+.productsbackground {
   background: #89A9EC;
 }
 
-.story-background {
+.storybackground {
   background: rgba(255, 238, 135, 0.49);
 }
 
@@ -73,6 +80,10 @@ header ul li a:hover {
   height: auto;
   margin-right: 2em;
   margin-left: 2em;
+}
+
+.whitelogo {
+  display: show;
 }
 
 /*
